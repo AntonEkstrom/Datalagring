@@ -1,0 +1,40 @@
+﻿<Application x:Class="Case_Management_System.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Case_Management_System"
+             xmlns:viewModel="clr-namespace:Case_Management_System.Models.ViewModels"
+             xmlns:view="clr-namespace:Case_Management_System.Views"
+             StartupUri="MainWindow.xaml"
+    xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Templates/MenuItemTemplate.xaml" />
+                <ResourceDictionary Source="Templates/DataGridItemTemplate.xaml" />
+                <ResourceDictionary Source="Templates/ButtonTemplate.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            
+            <DataTemplate DataType="{x:Type viewModel:CaseRegisterViewModel}">
+                <view:CaseRegisterView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:CaseViewModel}">
+                <view:CaseView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:MainPageViewModel}">
+                <view:MainPageView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:UserRegisterViewModel}">
+                <view:UserRegisterView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:UserViewModel}">
+                <view:UserView/>
+            </DataTemplate>
+
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

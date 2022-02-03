@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\CaseRegisterView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CaseView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MainPageView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserRegisterView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Templates\ButtonTemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Templates\datagriditemtemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Templates\MenuItemTemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CaseRegisterView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CaseView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MainPageView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserRegisterView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
