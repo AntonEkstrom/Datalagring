@@ -27,7 +27,7 @@ namespace Case_Management_System.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
+                optionsBuilder.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
         }
 
     }

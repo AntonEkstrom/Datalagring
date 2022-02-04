@@ -35,7 +35,7 @@ namespace Case_Management_System.Views
 
         public void LoadCases()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
 
             SqlCommand cmd = new SqlCommand("SELECT TOP 10 * FROM Cases INNER JOIN Users ON Cases.UserId = Users.Id INNER JOIN Statuses ON Cases.StatusId = Statuses.Id ORDER BY Statuses.Id, Cases.DateTime DESC", con);
             DataTable dt = new DataTable();
@@ -49,7 +49,7 @@ namespace Case_Management_System.Views
 
         public void LoadUsers()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
 
             SqlCommand cmd = new SqlCommand("SELECT TOP 10 * FROM Users ORDER BY Id DESC", con);
             DataTable dt = new DataTable();

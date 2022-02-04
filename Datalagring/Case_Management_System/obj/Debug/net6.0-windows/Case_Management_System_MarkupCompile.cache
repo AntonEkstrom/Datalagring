@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\Datalagringstenta\Datalagring\Case_Management_System\obj\Debug\net6.0-windows\
-Case_Management_System_nnofdlx3_wpftmp
+D:\Datalagringstenta\Datalagring\Case_Management_System\obj\Debug\net6.0-windows\
+Case_Management_System
 none
 false
-TRACE;RELEASE;NET;NET6_0;NETCOREAPP
-F:\Datalagringstenta\Datalagring\Case_Management_System\App.xaml
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+D:\Datalagringstenta\Datalagring\Case_Management_System\App.xaml
 945630755
 
-34-929012380
-4281790976698
+26-1337270769
+214895488349
 MainWindow.xaml;Templates\ButtonTemplate.xaml;Templates\DataGridItemTemplate.xaml;Templates\MenuItemTemplate.xaml;Views\CaseRegisterView.xaml;Views\CaseView.xaml;Views\MainPageView.xaml;Views\UserRegisterView.xaml;Views\UserView.xaml;
 
-True
+False
 

@@ -12,11 +12,11 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-            <Setter Property="Background" Value="#125977"/>
+            <Setter Property="Background" Value="#FF191970"/>
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="true">
-                <Setter Property="Background" Value="#0D3A4D"/>
+                <Setter Property="Background" Value="#FF191953"/>
             </Trigger>
         </Style.Triggers>
     </Style>

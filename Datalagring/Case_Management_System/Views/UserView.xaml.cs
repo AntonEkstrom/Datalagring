@@ -35,7 +35,7 @@ namespace Case_Management_System.Views
 
         public void LoadGrid()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
 
             SqlCommand cmd = new SqlCommand("SELECT * FROM Users ORDER BY Id DESC", con);
             DataTable dt = new DataTable();
@@ -48,7 +48,7 @@ namespace Case_Management_System.Views
 
         private void AddChange_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
 
             con.Open();
             SqlCommand cmd = new SqlCommand("UPDATE Users SET FirstName = '"+AddFirstName.Text+"', LastName = '"+AddLastName.Text+"', Email = '"+AddEmail.Text+"', PhoneNumber = '"+AddPhoneNumber.Text+"', StreetName = '"+AddStreetName.Text+"', PostalCode = '"+AddPostalCode.Text+"', City = '"+AddCity.Text+"', Country = '"+AddCountry.Text+"' WHERE Id = '"+AddId.Text+"' ", con); 
@@ -60,7 +60,7 @@ namespace Case_Management_System.Views
 
         private void AddDelete_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
 
             con.Open();
             SqlCommand cmd = new SqlCommand("DELETE FROM Users WHERE Id = '"+AddId.Text+"' ", con);

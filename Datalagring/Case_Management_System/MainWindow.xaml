@@ -18,7 +18,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="0" Background="#125977">
+        <StackPanel Grid.Column="0" Background="#FF191970">
            
             <RadioButton Content="Startsida" Foreground="white" FontWeight="DemiBold" FontSize="20" IsChecked="True" Style="{StaticResource MenuItemTemplate}"  Command="{Binding MainPageCommand}" Margin="0 150 0 60" />
 

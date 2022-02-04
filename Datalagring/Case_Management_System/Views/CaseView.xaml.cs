@@ -44,7 +44,7 @@ namespace Case_Management_System.Views
 
         public void LoadGrid()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
         
             SqlCommand cmd = new SqlCommand("SELECT * FROM Cases INNER JOIN Users ON Cases.UserId = Users.Id INNER JOIN Statuses ON Cases.StatusId = Statuses.Id ORDER BY Statuses.Id, Cases.DateTime DESC", con);
             DataTable dt = new DataTable();
@@ -58,7 +58,7 @@ namespace Case_Management_System.Views
 
         private void AddDelete_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
 
             con.Open();
             SqlCommand cmd = new SqlCommand("DELETE FROM Cases WHERE Id = '"+AddId.Text+"' ", con);
@@ -70,7 +70,7 @@ namespace Case_Management_System.Views
 
         private void AddUpdate_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Datalagringstenta\Datalagring\Case_Management_System\Data\sql_database.mdf;Integrated Security=True;Connect Timeout=30");
 
             con.Open();
             SqlCommand cmd = new SqlCommand("UPDATE Cases SET HeadLine = '" + AddHeadLine.Text + "', Description = '" + AddDescription.Text + "', DateTimeChanged = '" + DateTime.Now + "', UserId = '" + (int)AddUser.SelectedValue + "', StatusId = '" + (int)AddStatus.SelectedValue + "' WHERE Id = '" + AddId.Text + "' ", con);

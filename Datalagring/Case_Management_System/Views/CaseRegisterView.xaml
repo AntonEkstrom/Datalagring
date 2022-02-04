@@ -50,8 +50,8 @@
 
 
 
-            <Label x:Name="AddError" Foreground="DarkRed" FontSize="14" Margin="20 40 0 0" HorizontalAlignment="Left" />
-            <Label x:Name="AddSucess" Foreground="DarkGreen" FontSize="14" Margin="20 -29 0 0" HorizontalAlignment="Left" />
+            <Label x:Name="AddError" Foreground="Red" FontSize="14" Margin="20 40 0 0" HorizontalAlignment="Left" />
+            <Label x:Name="AddSucess" Foreground="Green" FontSize="14" Margin="20 -29 0 0" HorizontalAlignment="Left" />
         </StackPanel>
 
         <StackPanel Grid.Column="2" Margin="30 120 0 10">
